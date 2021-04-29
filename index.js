@@ -30,7 +30,7 @@ app.get("/", express.static(path.join(__dirname, "./public")));
 
 app.get("/:filename", (req, res) => {
     let filename = req.params.filename;
-    res.sendFile(path.join(__dirname, "./app/uploads/" + filename));
+    res.sendFile(path.join(__dirname, "./uploads/" + filename));
 });
 
 app.post(
