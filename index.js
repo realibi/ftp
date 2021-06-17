@@ -50,6 +50,8 @@ app.post(
                 .status(200)
                 .contentType("text/plain")
                 .end(targetPath);
+
+	    console.log("new uploaded file target path: " + targetPath);
         });
     }
 );
